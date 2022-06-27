@@ -2,19 +2,19 @@ package entities;
 
 public class Company extends TaxPayer{
 
-	private Double numberOfEmployees;
+	private Integer numberOfEmployees;
 	
 	public Company() {
 		super();
 	}
-	public Company(String name, Double anualIncome, Double numberOfEmployees) {
+	public Company(String name, Double anualIncome, Integer numberOfEmployees) {
 		super(name, anualIncome);
 		this.numberOfEmployees = numberOfEmployees;
 	}
-	public Double getHelthExpenditures() {
+	public Integer getHelthExpenditures() {
 		return numberOfEmployees;
 	}
-	public void setHelthExpenditures(Double numberOfEmployees) {
+	public void setHelthExpenditures(Integer numberOfEmployees) {
 		this.numberOfEmployees = numberOfEmployees;
 	}
 	@Override
